@@ -14,11 +14,11 @@ Ext.Loader.setPath({
 Ext.require( 'Ext.ux.PackageLoader', function() {
 
      Ext.apply(Ext.ux.PackageLoader, {
-        packageRootPath:'../packages/{0}/build/',
+        packageRootPath:'./packages/local/{0}/build/',
         disableCaching  : false
         // <debug>
         // development Mode relative/absolute address of build packages
-        ,packageRootPath : '../packages/{0}/build/',
+        ,packageRootPath : '../packages/local/{0}/build/',
         enableDebug     : true,
         disableCaching  : true
         // </debug>

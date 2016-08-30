@@ -213,6 +213,9 @@
     },
     
     "testing": {
+        "buildOptions": {
+            "debug": false
+        }
     },
     
     "development": {
