@@ -39,7 +39,7 @@ Ext.define('DynaPackage.controller.Navigator', {
               }
 
 
-         }, this.getApplication().viewport );
+         }, this.getApplication().getMainView() );
      }
 
 });

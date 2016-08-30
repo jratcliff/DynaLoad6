@@ -64,7 +64,10 @@
     </target>
 
     <target name="-before-js"/>
-    <target name="-after-js"/>
+    <target name="-after-js">
+        <echo>Copying package.json to ${package.build.dir}</echo>
+        <copy file="package.json" todir="${package.build.dir}" overwrite="true" />
+    </target>
     <target name="-js"
             depends="-compile-js-debug,-compile-js-non-debug"/>
 

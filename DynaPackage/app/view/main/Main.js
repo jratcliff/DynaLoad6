@@ -9,6 +9,7 @@ Ext.define('DynaPackage.view.main.Main', {
     extend: 'Ext.container.Container',
     
     requires : [
+        'Ext.plugin.Viewport',
         'DynaPackage.view.Navigation',
         'Ext.container.Container',
 
