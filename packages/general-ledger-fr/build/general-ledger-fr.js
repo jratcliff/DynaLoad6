@@ -1,0 +1,1 @@
+Ext.define("Fanciful.locale.Ledger",{override:"Fanciful.view.Ledger",config:{title:"grand livre général"},html:"vos livres sont en équilibre!"});

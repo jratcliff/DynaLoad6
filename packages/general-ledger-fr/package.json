@@ -1,0 +1,33 @@
+{
+    /**
+     * The namespace of this package.
+     *
+     * As a general rule, all classes that belong to this package should be under this namespace
+     * if multiple namespaces are part of this package, set this to "".
+     */
+    "namespace": "General.ledger.fr",
+
+
+    "name": "general-ledger-fr",
+    "type": "code",
+    "creator": "Fanciful",
+    "summary": "Fanciful General Ledger (fr)",
+    "detailedDescription": "Full-featured General Ledger (locale:fr)",
+    "version": "1.0.0",
+    "compatVersion": "1.0.0",
+    "format": "1",
+    "slicer": {
+        "js": [
+            {
+                "path": "${package.dir}/sass/example/custom.js",
+                "isWidgetManifest": true
+            }
+        ]
+    },
+    "output": "${package.dir}/build",
+    "local": true,
+    "requires": ["general-ledger"],
+
+    "skipResources" : true,
+    "primaryViewClass" : "Fanciful.view.Ledger"
+}

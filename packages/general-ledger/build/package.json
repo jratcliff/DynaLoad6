@@ -1,0 +1,27 @@
+{
+    "name": "general-ledger",
+    "type": "code",
+    "creator": "Fanciful",
+    "summary": "Fanciful General Ledger",
+    "detailedDescription": "Full-featured General Ledger",
+    "version": "1.0.0",
+    "compatVersion": "1.0.0",
+    "format": "1",
+    "slicer": {
+        "js": [
+            {
+                "path": "${package.dir}/sass/example/custom.js",
+                "isWidgetManifest": true
+            }
+        ]
+    },
+    "output": "${package.dir}/build",
+    "local": true,
+    "requires": [],
+
+    "skipResources" : true,
+    "primaryViewClass" : "Fanciful.view.Ledger",
+    "controllers" : [
+        "Fanciful.controller.Ledger"
+    ]
+}
