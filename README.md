@@ -1,7 +1,7 @@
 # Ext.ux.PackageLoader
 --
 
-Dynamic Command Package Load Driver for Ext 4.1+/5.0+
+Dynamic Command Package Load Driver for Ext 6+
 
 A Sencha Command build that supports Command packages and app.json is REQUIRED.
 
