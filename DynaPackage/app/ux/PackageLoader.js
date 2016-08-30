@@ -379,7 +379,7 @@ Ext.define('Ext.ux.PackageLoader', {
      * @cfg {String} packageRootPath
      * Site-relative or absolute path where package builds are deployed
      */
-    packageRootPath : '../packages/{0}/build/',
+    packageRootPath : '../packages/local/{0}/build/',
 
     /**
      * @cfg {Boolean} [enableRtl=false]
@@ -660,6 +660,8 @@ Ext.define('Ext.ux.PackageLoader', {
             packageConfig = packageEntry.packageConfig;
 
         //Keep the Ext.manifest up to date with runtime additions
+        // TODO - extjs6 does not have a manifest.requires so need to find out what the equivalent should be
+        manifest.requires = manifest.requires || [];
         Ext.Array.include(manifest.requires, packageName);
 
         packageEntry.loaded = manifest[packageName] = true;
